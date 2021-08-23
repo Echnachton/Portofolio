@@ -1,38 +1,149 @@
-.App {
+#app{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: #274d6e;;
+}
+
+#home .heading1{
+  text-align: right;
+  margin-top: 10px;
+}
+
+#nav{
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color:rgba(255, 255, 255, 0.01);
+  gap: 2vw;
+  z-index: 3;
+}
+
+#nav a{
+  color: rgb(238, 231, 231);
+  text-decoration: none;
+}
+
+#nav a:first-child{
+  margin-left: 1vw;
+}
+
+#landingContent{
+  background: #274d6e;
+  overflow: hidden;
+  width: 50vw;
+}
+
+#about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#aboutFlex{
+  width: 50%;
+  text-align: left;
+}
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  width: 100%;
+}
+
+#projectFlex{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10vw;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1vw;
+}
+
+#projects .heading1{
+  width: 50%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading1{
+  font-family: "Bebas Neue";
+  font-size: 10vw;
+  margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading2{
+  font-size: 2vw;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.75);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.custom-shape-divider-top-1629554407 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.custom-shape-divider-top-1629554407 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  background-color: aquamarine;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-shape-divider-top-1629554407 .shape-fill {
+  fill: #274d6e;
+}
+
+.custom-shape-divider-top-1629554714 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1629554714 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1629554714 .shape-fill {
+  fill: aquamarine;
+}
+
+.custom-shape-divider-bottom-1629564797 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1629564797 svg {
+  position: relative;
+  display: block;
+  width: calc(123% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1629564797 .shape-fill {
+  fill: #000000;
 }

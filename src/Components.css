@@ -1,0 +1,57 @@
+.itemCard{
+    border-radius: 15px;
+    background-color: rgba(216, 209, 209, 0.3);
+    box-shadow: 5px 5px rgba(124, 117, 117, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemCard:hover{
+    transform: scale(1.05,1.05);
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.sqr{
+    width:20vw;
+    height:20vw;
+   }
+
+.rct{
+    width:20vw;
+    height:10vw;
+}
+
+.button{
+    border-radius: 15px;
+    background-color: rgba(216, 209, 209, 0.3);
+    box-shadow: 2px 3px rgba(124, 117, 117, 0.3);
+    width: 150%;
+    height: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button:hover{
+    transform: scale(1.05,1.05);
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#popupFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#msg{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}

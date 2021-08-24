@@ -6,10 +6,17 @@ import {ItemCard, Popup} from "./Components.jsx";
 function App() {
   return (
     <div id="app">
-      <Home/>
-      <Projects/>
-      <About/>
-      <Contacts/>
+      { window.screen.width <= 1024 &&
+        <div className="heading1" id="mobile">Mobile Version Coming Soon!</div>
+      }
+      { window.screen.width > 1024 &&
+      <>
+        <Home/>
+        <Projects/>
+        <About/>
+        <Contacts/>
+      </>
+      }
       <style>
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
       </style>
@@ -26,7 +33,7 @@ class Home extends React.Component{
             <a href="#home">Home</a>
             <a href="#projects">Projects</a>
             <a href="#about">About</a>
-            <a href="#contacts">Contacts</a>
+            <a href="https://www.linkedin.com/in/ivo-sasaoka-231147185/" target="_blank" rel="noreferrer">Contact</a>
           </div>
           <div id="landingContent">
             <div className="heading1">🐟</div>
@@ -48,7 +55,7 @@ function About(){
       <div id="aboutFlex">
           <div className="heading1">ABOUT</div>
           <div className="heading3">
-            I am a MSc Teaching English to Speakers of Other Languages (TESOL) student at the University of Edingburgh.
+            I am a MSc Teaching English to Speakers of Other Languages (TESOL) graduate of the University of Edingburgh.
             I joind the program becuase I wanted to be able to create useful online materials for language teaching. 
             This website is a collection of what I have made so far.
             Feel free to use what you find on this website.
@@ -77,7 +84,7 @@ function Projects(){
     rtcPractice:{
       nameDisplay: "RTC Practice",
       nameSort:"rtcPractice",
-      msg:"This Web App was buit as the second part of a two-part job interview preparation ESP course. This App connects learners over Web RTC and provides the opportunity to roleplay as both the interviewer and the interviewee.",
+      msg:"This Web App was buit as the second part of a two-part job interview preparation ESP course. This App connects learners over Web RTC and provides the opportunity to roleplay as both the interviewer and the interviewee. It may be necessary to reload the page after accepting permissions.",
       url: "https://reverent-darwin-89160c.netlify.app/"
     }
   }
@@ -104,11 +111,13 @@ function Projects(){
 
 function Contacts(){
   return(
+    <>
       <div className="custom-shape-divider-bottom-1629564797" id="contacts">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
         </svg>
       </div>
+    </>
   );
 }
 
